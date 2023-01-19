@@ -1,7 +1,14 @@
 // Importando módulos (dependências)
 const { PORT } = require("dotenv").config().parsed;
-
 const app = require("express")();
+const express = require("express")
+
+// Middleware
+app.use(express.json());
+
+//IMPLEMENTAÇÃO ALTERNATIVA
+// const bodyParser = require("body-parser");
+// app.use(bodyParser.json())
 
 // Mapeamento das rotas
 
