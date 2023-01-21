@@ -12,7 +12,7 @@ router.get("/", customersCtrl.getAll)
 router.get("/:id", customersCtrl.getOne)
 
 // Atualizar um cliente (PUT)
-router.put("/:id", customersCtrl.changeOne)
+router.patch("/:id", customersCtrl.changeOne)
 
 // Remover um cliente (DELETE)
 router.delete("/:id", customersCtrl.removeOne)
